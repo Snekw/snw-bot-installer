@@ -5,4 +5,4 @@
 Run  
 `wget "https://github.com/snekw/snw-bot-installer/archive/master.zip" -O master.zip; unzip master.zip; rm master.zip`  
  and  
-`./install.sh`
+`./snw-bot-installer-master/install.sh`
