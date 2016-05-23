@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+stop snwbot
 cd /home/snwbot
 
 mkdir /home/snwbot/temp
