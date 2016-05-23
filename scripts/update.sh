@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 cd /home/snwbot
 
-cp ./bot/config/* ./temp/config
+mkdir /home/snwbot/temp
+mkdir /home/snwbot/temp/config
+cp ./bot/config/* /home/snwbot/temp/config
 
 rm -r ./bot
 mkdir ./bot
@@ -17,7 +19,7 @@ do
     break
   else
     echo ${botVersion}
-    echo 'Failed to get botVersion... Trying again in 5 second.'
+    echo 'Failed to get botVersion... Trying again in 5 second. Ctrl - c to cancel.'
     sleep 5
  fi
 done
@@ -28,6 +30,9 @@ wget "https://github.com/Snekw/snw-bot/archive/${botVersion}.tar.gz" -O - | tar 
 
 botVersion=${botVersion#v}
 mv /home/snwbot/bot/snw-bot-${botVersion}/* /home/snwbot/bot
+
+cp /home/snwbot/temp/config/* ./bot/config
+rm -t /home/snwbot/temp
 
 sleep 1
 
