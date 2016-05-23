@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 cd /home/snwbot
 
+cp ./bot/config/* ./temp/config
+
+rm -r ./bot
+mkdir ./bot
+
 botVersion=''
 
 until [ -n "$botVersion" ] && [ "$botVersion" != "null" ]
