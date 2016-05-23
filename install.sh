@@ -10,3 +10,5 @@ chmod +x ./update.sh
 useradd -m -c "Snw-bot" snwbot -s /user/sbin/nologin
 
 sudo ./installDep.sh
+
+sudo ./update.sh

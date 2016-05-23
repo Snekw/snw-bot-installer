@@ -19,17 +19,11 @@ done
 
 echo ${botVersion}
 
-wget "https://github.com/Snekw/snw-bot/archive/${botVersion}.tar.gz" -O - | tar -zx
+wget "https://github.com/Snekw/snw-bot/archive/${botVersion}.tar.gz" -O - | tar -zx -C /home/snwbot/bot
 
 sleep 1
 
-runScript='/home/snwbot/scripts/run.sh'
 botVersion=${botVersion#v}
-
-rm ${runScript}
-touch ${runScript}
-rm /home/snwbot/snw-bot-${botVersion}/shScripts/firstInstall.sh
-printf "#!/usr/bin/env bash \nnode /home/snwbot/bot/snw-bot.js\n" | tee --append ${runScript}
 
 cd /home/snwbot/snw-bot-${botVersion}
 npm i --production
