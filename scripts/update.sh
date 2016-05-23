@@ -23,7 +23,5 @@ wget "https://github.com/Snekw/snw-bot/archive/${botVersion}.tar.gz" -O - | tar 
 
 sleep 1
 
-botVersion=${botVersion#v}
-
-cd /home/snwbot/snw-bot-${botVersion}
+cd /home/snwbot/bot
 npm i --production
