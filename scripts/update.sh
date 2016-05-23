@@ -38,3 +38,5 @@ sleep 1
 
 cd /home/snwbot/bot
 npm i --production
+
+start snwbot
