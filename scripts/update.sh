@@ -22,7 +22,7 @@ echo ${botVersion}
 wget "https://github.com/Snekw/snw-bot/archive/${botVersion}.tar.gz" -O - | tar -zx -C /home/snwbot/bot
 
 botVersion=${botVersion#v}
-mv /home/snwbot/bot/snw-bot-${botVersion} /home/snwbot/bot
+mv /home/snwbot/bot/snw-bot-${botVersion}/* /home/snwbot/bot
 
 sleep 1
 
