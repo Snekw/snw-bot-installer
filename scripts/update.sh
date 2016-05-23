@@ -32,7 +32,7 @@ botVersion=${botVersion#v}
 mv /home/snwbot/bot/snw-bot-${botVersion}/* /home/snwbot/bot
 
 cp /home/snwbot/temp/config/* ./bot/config
-rm -t /home/snwbot/temp
+rm -r /home/snwbot/temp
 
 sleep 1
 
