@@ -1,8 +1,9 @@
-#Snw-bot installer and updater scripts
+## Snw-bot installer and updater scripts
+# Not maintained or used anymore
 
 Installer for [Snw-bot](https://github.com/Snekw/snw-bot)
 
-##Installation
+### Installation
     
 Script will install needed scripts and upstart service which is used for running the bot.
 Bot creates user called `snwbot` and installs itself to `/home/snwbot` folder. Bot will be run as `snwbot`.
